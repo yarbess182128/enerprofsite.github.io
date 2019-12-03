@@ -1,0 +1,480 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+body {
+  font-family: "Intro Book Alt", sans-serif;
+  color: rgb(0, 182, 241);
+}
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: rgb(0, 182, 241);
+}
+a:hover {
+  color: rgb(171, 225, 250);
+  text-decoration: none;
+}
+/* ------------MAIN-HEADER---------- */
+/* .col-lg-6{
+    width: 255px;
+    padding: 0;
+} */
+.menu {
+  margin-top: 1.5625rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__item {
+  margin: 0 0.1875rem 0 0.1875rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  /* transition: 0.3s linear; */
+  text-transform: uppercase;
+}
+.menu__item:hover {
+  color: rgb(171, 225, 250);
+  cursor: pointer;
+  /* transition: 0.4s linear; */
+  border-top: 0.0625rem solid rgb(0, 182, 241);
+  border-bottom: 0.0625rem solid rgb(0, 182, 241);
+}
+/* .btn{
+    background-color: rgb(0, 182, 241);
+    color: white;
+    font-size: 1.125rem;
+    border-radius: 0.1875rem;
+    text-transform: uppercase;
+    font-family: 'DIN Pro Cond', sans-serif;
+    font-weight: 700;
+    padding:0.3125rem 0.3125rem ;
+    display: block;
+    cursor: pointer;
+    width: 6.25rem;
+    border: 0; 
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+.btn:hover{
+    background-color: rgb(171, 225, 250);
+    color:white;
+}
+.btn__icon{
+    background: url('../images/settings.png');
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+} */
+.main-header {
+  padding: 1.5rem 0;
+}
+.main-header-fixed {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  animation-name: show_header;
+  animation-duration: 2s;
+  opacity: 0.8;
+}
+@keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: -0;
+  }
+}
+#header {
+  width: 100%;
+  margin: 0 auto;
+}
+/* !------------/MAIN-HEADER\---------- */
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+/* --------------SLIDER---------------- */
+.blok-slider {
+  /* position: relative; */
+  width: 100%;
+}
+.sl__img {
+  width: 100%;
+  height: auto;
+}
+.mini__link {
+  position: relative;
+  z-index: 1;
+  top: -2.25rem;
+}
+.mini__link a {
+  background-color: rgb(0, 182, 241);
+  width: 28.125rem;
+  height: 3.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  border: 0px solid;
+  border-radius: 0.0938rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-family: "Intro" sans-serif;
+  transition: 0.3s linear;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.mini__link a:hover {
+  background-color: rgb(171, 225, 250);
+  color: rgb(0, 182, 241);
+  transition: 0.3s linear;
+  text-decoration: none;
+}
+/* --------------/SLIDER\---------------- */
+/* --------------CONTACT WITH US--------- */
+.call {
+  margin-top: -1.6875rem;
+  background: #edf1f3;
+  border-bottom: 0.0625rem solid #dde3e7;
+  padding: 2.1875rem 0;
+}
+.phone {
+  display: flex;
+}
+.phone__text {
+  background: url("../images/phone-call.png") no-repeat left center;
+  color: rgb(0, 182, 241);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Intro Black Alt", sans-serif;
+  font-weight: 700;
+  /* width: 180px; */
+  padding-left: 3.5rem;
+}
+.phone__digits {
+  font-size: 2rem;
+  font-family: "Intro Black Alt" sans-serif;
+  color: #14141d;
+  margin-left: 2.625rem;
+}
+.phone__digits a:hover {
+  color: rgb(0, 182, 241);
+}
+.phone__text span {
+  font-size: 1rem;
+  margin-top: -0.25rem;
+  display: block;
+}
+.color {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Intro Black Alt" sans-serif;
+  color: black;
+}
+/* --------------/CONTACT WITH US\--------- */
+/* --------------CARD--------- */
+.goods {
+  background-color: rgb(
+    171,
+    225,
+    250
+  ); /*может быть картинка для верхушки товаров*/
+  padding-top: 2.5rem;
+  padding-bottom: 3.125rem;
+}
+.special-title {
+  font-size: 2.1875rem;
+  text-align: center;
+}
+.card_block {
+  width: 21.875rem;
+}
+.card {
+  margin-top: 1.5625rem;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__img {
+  margin-bottom: 2.1875rem;
+}
+.card__title {
+  text-align: center;
+  color: rgb(0, 182, 241);
+  font-family: "DIN Pro Cond", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+}
+.card__desc {
+  text-align: center;
+  padding: 0.625rem;
+  height: 6.875rem;
+}
+.card__btn,
+#card__btn {
+  color: white;
+  background-color: rgb(0, 182, 241);
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+  border: 0;
+  display: block;
+  cursor: pointer;
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 0;
+}
+#card__btn {
+  padding: 13px;
+}
+.card__btn,
+#card__btn:hover {
+  background-color: rgb(171, 225, 250);
+  color: rgb(0, 182, 241);
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+/* --------------/CARD\--------- */
+
+/* --------------GLOBAL CATALOG--------- */
+.global {
+  margin: 3.125rem auto;
+  max-width: 69.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+.global-img {
+  width: 55%;
+  margin: 0 auto;
+}
+.global-desk h3 {
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+  color: rgb(0, 182, 241);
+  text-transform: uppercase;
+}
+.global-desk p {
+  font-family: "Intro Book Alt", sans-serif;
+  width: 100%;
+  padding: 0.9375rem 0;
+  font-size: 1rem;
+}
+.global-desk {
+  margin: 0.3125rem auto;
+  width: 75%;
+  margin-top: 5%;
+  font-size: 0.9375rem;
+  text-align: center;
+}
+.global-btn {
+  text-align: center;
+  color: white;
+  padding: 0.9375rem;
+  background-color: rgb(0, 182, 241);
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+  padding: 0;
+}
+.global-btn:hover {
+  background-color: rgb(171, 225, 250);
+  color: rgb(0, 182, 241);
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+/* --------------/GLOBAL CATALOG/--------- */
+
+/* --------------QUALITY--------- */
+.quality {
+  background-color: rgb(171, 225, 250);
+  padding-top: 0.0625rem;
+}
+.quality__container {
+  width: 68%;
+  margin: 0 auto;
+  text-align: center;
+}
+.quality__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.title__quality {
+  margin: 2.1875rem 0;
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+}
+.top-card {
+  width: 15.8125rem;
+  transition: 0.6s;
+}
+.top-card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.quality__btn {
+  background-color: rgb(0, 182, 241);
+  width: 15.8125rem;
+  padding: 0.625rem;
+  margin-bottom: 3.4375rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+}
+/* --------------/QUALITY\--------- */
+/* --------------FEEDBACK--------- */
+.feedback {
+  height: auto;
+  padding: 3.125rem 0 0 0;
+}
+.feedback-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5625rem;
+}
+.title__feedback {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title__feedback h3 {
+  font-family: "DIN Pro Cond", sans-serif;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  color: rgb(0, 182, 241);
+}
+.title__feedback p {
+  font-size: 1.125rem;
+}
+/* --------------/FEEDBACK\--------- */
+
+/* --------------FOOTER------------- */
+h2,
+h3 {
+  color: #fff;
+}
+p {
+  color: #999;
+  line-height: 1.5625rem;
+}
+h2 {
+  font-size: 1.125rem;
+}
+.footer-top {
+  background-color: rgb(171, 225, 250);
+  padding: 2.8125rem 0;
+}
+.segment-one h2 {
+  text-align: center;
+  font-family: "DIN Pro Cond", sans-serif;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.segment-one h2::before {
+  content: "|";
+  color: rgb(0, 182, 241);
+  padding-right: 0.625rem;
+}
+.segment-one p {
+  font-family: "DIN Pro Regular", sans-serif;
+  padding-top: 0.3125rem;
+  /* font-weight: 600; */
+  width: 100%;
+  font-size: 0.9375rem;
+}
+.segment-one p span a {
+  text-decoration: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.9375rem;
+}
+.segment-one p span a:hover {
+  color: white;
+}
+.segment-two h2 {
+  font-family: "DIN Pro", sans-serif;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.segment-two h2::before {
+  content: "|";
+  color: rgb(0, 182, 241);
+  padding-right: 0.625rem;
+}
+.segment-two ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two li {
+  font-family: "DIN Pro Regular", sans-serif;
+  border-bottom: 0.0625rem solid rgb(0, 182, 241);
+  line-height: 1.875rem;
+  color: white;
+}
+.segment-two ul li a {
+  color: #999;
+  text-decoration: none;
+}
+.segment-two ul li a:hover {
+  color: white;
+}
+.segment-three h2 {
+  font-family: "DIN Pro Cond", sans-serif;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.segment-three h2::before {
+  content: "|";
+  color: rgb(0, 182, 241);
+  padding-right: 0.625rem;
+}
+.segment-three a {
+  background: rgb(0, 182, 241);
+  width: 3.125rem;
+  height: 3.125rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+.segment-three a i {
+  font-size: 1.875rem;
+  color: #fff;
+  padding: 0.6875rem;
+}
+.segment-three p {
+  font-family: "DIN Pro Regular", sans-serif;
+}
+.footer-bottom-text {
+  text-align: center;
+  line-height: 2.1875rem;
+  margin: 0;
+}
+/* --------------/FOOTER\------------- */
